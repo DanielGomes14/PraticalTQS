@@ -42,11 +42,11 @@ After opening up  the `index.html` file in the Browser, present on the  director
 
 
 
-![image2](/home/danielgomes/Desktop/TQS/Praticas/aula01/ex2/image2.png)
+![image2](https://github.com/DanielGomes14/PraticalTQS/blob/main/lab1/P2Euromillions/image2.png)
 
-![image3](/home/danielgomes/Desktop/TQS/Praticas/aula01/ex2/image3.png)
+![image3](https://github.com/DanielGomes14/PraticalTQS/blob/main/lab1/P2Euromillions/image3.png)
 
-![image4](/home/danielgomes/Desktop/TQS/Praticas/aula01/ex2/image4.png)
+![image4](https://github.com/DanielGomes14/PraticalTQS/blob/main/lab1/P2Euromillions/image4.png)
 
 As we can see a really great part of the code  has been covered by the tests that were written.
 
