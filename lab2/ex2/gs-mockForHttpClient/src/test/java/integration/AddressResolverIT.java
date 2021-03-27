@@ -17,9 +17,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class AddressResolverIT {
 
     private AddressResolver resolver;
+    private  ISimpleHttpClient httpClient;
     @BeforeEach
     public void init(){
-        resolver  = new AddressResolver( new TqsBasicHttpClient());
+        httpClient = new TqsBasicHttpClient();
+        resolver  = new AddressResolver( httpClient);
     }
 
     @Test
@@ -38,4 +40,9 @@ public class AddressResolverIT {
 
     }
 
+    @Test
+    public void  whenBadURI_throwNull() throws  IOException, URISyntaxException, ParseException {
+        assertThrows(NullPointerException.class,
+                () -> httpClient.get(null));
+    }
 }

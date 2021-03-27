@@ -44,6 +44,9 @@ public class AddressResolver {
         String response = this.httpClient.get(uriBuilder.build().toString());
 
         System.out.println("JSON is: >" + response + "<");
+        if(response.equals("null")){
+            throw  new NullPointerException();
+        }
 
         // get parts from response till reaching the address
         JSONObject obj = (JSONObject) new JSONParser().parse(response);

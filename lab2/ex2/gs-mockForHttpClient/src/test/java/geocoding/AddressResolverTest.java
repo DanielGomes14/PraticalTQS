@@ -1,6 +1,7 @@
 package geocoding;
 
 import connection.ISimpleHttpClient;
+import connection.TqsBasicHttpClient;
 import org.json.simple.parser.ParseException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -48,5 +49,15 @@ class AddressResolverTest {
 
         assertThrows( IndexOutOfBoundsException.class,
                 () -> resolver.findAddressForLocation(-200.000000,-200.000000));
+    }
+
+    @Test
+    public  void whenBadURI_throwNull() throws IOException, URISyntaxException, ParseException{
+        when( httpClient.get(isNull())).thenThrow(
+                NullPointerException.class
+        );
+        assertThrows(NullPointerException.class,
+                ()-> httpClient.get(null));
+
     }
 }
