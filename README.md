@@ -6,6 +6,7 @@ This repository contains all the content developed on the pratical classes.
 - `lab2`- Mockito (Mocking Dependecies)
 - `lab3`- Selenium (Acceptance Tests for Web Automation)
 - `lab4`- Multi-layer application testing with SpringBoot
+- `lab5`- Behaviour-driven development( Cucumber in Java)
 
 ## Author
 
