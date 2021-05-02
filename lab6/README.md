@@ -55,3 +55,20 @@ Clicking on coverage percentage number, we are redirected to a page where we can
 
 ![](images/Sonar4.png)
 
+
+
+## If possible, collaborate with other colleagues to define a custom quality gate to this project (specially if you are using the IES project, try to work with the development team from then).
+
+In order to conclude the goal of this exercise, we as the team of our IES Project met up, and started by running the previous command, on the project, where we found some security vulnerabilities and a lot of "code smells":
+
+![](images/Sonar9.png)
+
+After this, we looked foward to define a quality gate on the overall code:
+
+![](images/Sonar8.png)
+
+Finally, after running again the command we got the following results
+
+![](images/Sonar7.png)
+
+As it is predictable, the quality gate defined has failed.
