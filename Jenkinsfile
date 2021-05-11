@@ -15,7 +15,7 @@ pipeline {
                 sh 'mvn -version'
                 }
             }
-            stage('Install') { 
+            stage('Install') {  
             steps {
                 dir('/lab8/P2Euromillions'){
                     sh "$PWD"  
@@ -30,4 +30,5 @@ pipeline {
                 } 
             } 
         }
-    } 
+    }
+} 
