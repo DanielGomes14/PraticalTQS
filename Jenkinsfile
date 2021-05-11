@@ -5,6 +5,10 @@ pipeline {
             maven 'mvn36'
             }
     stages {
+            steps {
+                dir('/lab8/P2Euromillions'){
+                    sh "$PWD"  
+            }    
             stage('test java installation') {
             steps {  
                 sh 'java -version'      
@@ -15,11 +19,7 @@ pipeline {
                 sh 'mvn -version'
                 }
             }
-            stage('Install') {  
-            steps {
-                dir('/lab8/P2Euromillions'){
-                    sh "$PWD"  
-                }       
+            stage('Install') {     
             steps { 
                 sh "mvn clean install" 
                 } 
