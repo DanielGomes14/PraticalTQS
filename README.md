@@ -8,7 +8,7 @@ This repository contains all the content developed on the pratical classes.
 - `lab4`- Multi-layer application testing with SpringBoot
 - `lab5`- Behaviour-driven development( Cucumber in Java)
 - `lab6`- Static Code Analysis (with Sonar Qube)
-
+- `lab7`- CI with Jenkins
 ## Author
 
 [Daniel Gomes](https://github.com/DanielGomes14), nºmec 93015
