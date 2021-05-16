@@ -39,6 +39,12 @@ public class DipTest {
     }
 
     @Test
+    void failingTest(){
+
+        fail();
+    }
+
+    @Test
     public void testFormat() {
         // note: correct the implementation of the format(), not the test...
         String result = instance.format();
