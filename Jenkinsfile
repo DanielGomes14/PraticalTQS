@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         jdk 'JDK11'
-        maven 'Maven'
+        maven 'mvn36'
     }
     stages {
         stage('test java installation') {
