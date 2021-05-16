@@ -4,11 +4,7 @@ pipeline {
             jdk 'JDK11'
             maven 'mvn36'
             }
-    stages {
-            steps {
-                dir('/lab8/P2Euromillions'){
-                    sh "$PWD"  
-            }    
+    stages {   
             stage('test java installation') {
             steps {  
                 sh 'java -version'      
@@ -19,16 +15,5 @@ pipeline {
                 sh 'mvn -version'
                 }
             }
-            stage('Install') {     
-            steps { 
-                sh "mvn clean install" 
-                } 
-            post {
-                always {
-                    junit '**/target/*-reports/TEST-*.xml'
-                    } 
-                } 
-            } 
-        }
     }
 } 
