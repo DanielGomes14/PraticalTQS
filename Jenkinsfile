@@ -15,5 +15,20 @@ pipeline {
                 sh 'mvn -version'
                 }
             }
+            stage('Install') {   
+            steps {
+                dir('./lab8/P2Euromillions'){
+                    sh "$PWD"  
+            }   
+            steps { 
+                sh "mvn clean install" 
+                } 
+            post {
+                always {
+                    junit '**/target/*-reports/TEST-*.xml'
+                    } 
+                } 
+            } 
+        }
     }
 } 
