@@ -21,7 +21,7 @@ pipeline {
                     sh "$PWD"  
             }   
             steps { 
-                sh "mvn clean install" 
+                sh 'mvn clean install' 
                 } 
             post {
                 always {
