@@ -37,12 +37,8 @@ public class DipTest {
             new Dip( new int[] {10, 20,40, 50}, new int[] {1});
         } );
     }
+   
 
-    @Test
-    void failingTest(){
-
-        fail();
-    }
 
     @Test
     public void testFormat() {
