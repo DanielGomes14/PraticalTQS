@@ -18,7 +18,7 @@ pipeline {
             stage('Install') {   
             steps {
                 dir('./lab1/P2Euromillions'){
-                    sh "$PWD"  
+                    sh '$PWD'  
             }   
             steps { 
                 sh 'mvn clean install' 
